@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Goal
+  - Banana
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Worker
   - Water
   - UI
   - 

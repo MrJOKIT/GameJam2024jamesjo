@@ -15,6 +15,7 @@ public class Banana : MonoBehaviour
         if (shootTimer > shootTimeCounter)
         {
             shootPower = 0;
+            transform.gameObject.tag = "Banana";
         }
 
         transform.Translate(Vector3.up * shootPower * Time.deltaTime);
@@ -24,4 +25,6 @@ public class Banana : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    
 }

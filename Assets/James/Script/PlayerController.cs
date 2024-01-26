@@ -26,9 +26,9 @@ public class PlayerController : MonoBehaviour
     private void PlayerMovement()
     {
         float x = Input.GetAxisRaw("Horizontal");
-        float y = Input.GetAxisRaw("Vertical");
+        //float y = Input.GetAxisRaw("Vertical");
 
-        Vector3 movement = new Vector3(x, y);
+        Vector3 movement = new Vector3(x, 0);
 
         transform.position += movement * movementSpeed * Time.deltaTime;
     }

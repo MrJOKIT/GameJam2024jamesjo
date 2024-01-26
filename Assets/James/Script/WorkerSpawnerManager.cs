@@ -6,6 +6,7 @@ using Random = UnityEngine.Random;
 
 public class WorkerSpawnerManager : MonoBehaviour
 {
+    [SerializeField] private float spawnDelay;
     public Transform[] spawnPoint;
     [SerializeField] private int workerCountToSpawn;
     [SerializeField] private List<GameObject> workerSpawn;
@@ -51,7 +52,7 @@ public class WorkerSpawnerManager : MonoBehaviour
         Instantiate(workerSpawn[0],spawnPoint[spawnNumber].position,spawnPoint[spawnNumber].rotation);
         workerSpawn.Remove(workerSpawn[0]);
         Debug.Log($"Spawn way{spawnNumber}");
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(spawnDelay);
         canSpawn = true;
     }
 }
