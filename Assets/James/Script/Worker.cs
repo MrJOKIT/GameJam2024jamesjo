@@ -9,6 +9,7 @@ public class Worker : MonoBehaviour
     private bool onWorkerInLine;
     public Transform checkPoint;
     public LayerMask checkLayer;
+    private float workerPoint = 1000f;
     
     
     private void Update()
@@ -19,8 +20,10 @@ public class Worker : MonoBehaviour
         {
             transform.Translate(Vector3.right * workerSpeed * Time.deltaTime);
         }
-        
-        
+
+        workerPoint -= Time.deltaTime * 100f;
+
+
     }
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -34,6 +37,7 @@ public class Worker : MonoBehaviour
         else if (col.CompareTag("Banana"))
         {
             //Play Animate Died
+            GameManager.instance.AddScore(workerPoint);
             Destroy(col.gameObject);
             Destroy(gameObject);
         }

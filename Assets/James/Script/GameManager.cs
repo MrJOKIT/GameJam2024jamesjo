@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public int hp;
     public Image[] hpImage;
+    private float score;
 
     private void Awake()
     {
@@ -50,5 +51,10 @@ public class GameManager : MonoBehaviour
                     hpImage[2].enabled = false;
                     break;
         }
+    }
+
+    public void AddScore(float scorePoint)
+    {
+        score += scorePoint;
     }
 }
