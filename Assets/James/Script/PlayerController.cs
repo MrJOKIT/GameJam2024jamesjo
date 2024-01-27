@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     [Header("ThrowSetting")] 
     private float throwTimeCounter = 1.5f;
     private float throwTime;
+    private Animator _animator;
 
     [Header("Text")] public DamageNumber textPrefab;
     [SerializeField] private string[] dialogue;
@@ -24,7 +25,9 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        _animator = GetComponent<Animator>();
     }
+    
 
     private void Update()
     {
@@ -59,6 +62,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             throwTime += Time.deltaTime;
+            _animator.SetBool("Throw",true);
             if (throwTime >= throwTimeCounter)
             {
                 throwTime = throwTimeCounter;
@@ -76,6 +80,7 @@ public class PlayerController : MonoBehaviour
             {
                 throwTime = 0;
             }
+            _animator.SetBool("Throw",false);
         }
 
         float chargeCount = throwTime / throwTimeCounter;

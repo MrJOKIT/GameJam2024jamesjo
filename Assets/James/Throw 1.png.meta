@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d510b143e2dadf548a2f8546b2dd083c
+guid: f7a85bf81f8af16428d9c36d43744486
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Throw_0
+      name: Throw 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64976e0529d082e4db9e492c63d9e177
-      internalID: -515950805
+      spriteID: 2de5492796eab7f489b8595387d43795
+      internalID: -404393461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_1
+      name: Throw 1_1
       rect:
         serializedVersion: 2
         x: 128
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52ae856060769e64aaa62d7615df88d7
-      internalID: -1617896948
+      spriteID: 2ae379aa7855c2047b1d862450d5112a
+      internalID: -428320557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_2
+      name: Throw 1_2
       rect:
         serializedVersion: 2
         x: 256
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f51931c3dab2ea44190661a22ee3e192
-      internalID: 1721163369
+      spriteID: 1d5dec01d57b266489f7caaebc2821ed
+      internalID: -1296315853
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_3
+      name: Throw 1_3
       rect:
         serializedVersion: 2
         x: 384
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 457e644c9a4f8d0488bbf7b9d5e3391e
-      internalID: -941741360
+      spriteID: 852d59e7b4bccb249b49674ada07d636
+      internalID: 2027560315
       vertices: []
       indices: 
       edges: []
@@ -204,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Throw_0: -515950805
-      Throw_1: -1617896948
-      Throw_2: 1721163369
-      Throw_3: -941741360
+      Throw 1_0: -404393461
+      Throw 1_1: -428320557
+      Throw 1_2: -1296315853
+      Throw 1_3: 2027560315
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

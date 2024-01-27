@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d510b143e2dadf548a2f8546b2dd083c
+guid: e49dc3d9eca9f4b4a8a2ecf8ceff3e60
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Throw_0
+      name: ThrowWithBanana_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64976e0529d082e4db9e492c63d9e177
-      internalID: -515950805
+      spriteID: 42244703e6b91c249be2093cd863d414
+      internalID: 1733320770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_1
+      name: ThrowWithBanana_1
       rect:
         serializedVersion: 2
         x: 128
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52ae856060769e64aaa62d7615df88d7
-      internalID: -1617896948
+      spriteID: 684dd62864216f74ab979518ca0cee70
+      internalID: -521392762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_2
+      name: ThrowWithBanana_2
       rect:
         serializedVersion: 2
         x: 256
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f51931c3dab2ea44190661a22ee3e192
-      internalID: 1721163369
+      spriteID: 8d8b0fc5df09c8c47accb66b1290e7fc
+      internalID: 602053135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_3
+      name: ThrowWithBanana_3
       rect:
         serializedVersion: 2
         x: 384
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 457e644c9a4f8d0488bbf7b9d5e3391e
-      internalID: -941741360
+      spriteID: 80fb53da6d80343469520db8927582ac
+      internalID: -1598891687
       vertices: []
       indices: 
       edges: []
@@ -204,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Throw_0: -515950805
-      Throw_1: -1617896948
-      Throw_2: 1721163369
-      Throw_3: -941741360
+      ThrowWithBanana_0: 1733320770
+      ThrowWithBanana_1: -521392762
+      ThrowWithBanana_2: 602053135
+      ThrowWithBanana_3: -1598891687
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
