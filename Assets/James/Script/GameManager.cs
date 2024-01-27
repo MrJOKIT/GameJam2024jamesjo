@@ -1,12 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    public TextMeshProUGUI scoreText;
     public int hp;
     public Image[] hpImage;
     private float score;
@@ -20,6 +22,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         UpdateHp();
+        scoreText.text = "SCORE: " + Convert.ToInt16(score);
     }
 
     public void HpDecrease()

@@ -105,6 +105,7 @@ MonoBehaviour:
   checkLayer:
     serializedVersion: 2
     m_Bits: 8
+  scoreNoti: {fileID: 3736431498023216104, guid: 1d3843fcf7d4e374ba13b90189e10b97, type: 3}
 --- !u!58 &9100222046479978923
 CircleCollider2D:
   m_ObjectHideFlags: 0

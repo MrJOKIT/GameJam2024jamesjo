@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DamageNumbersPro;
 using UnityEngine;
 
 public class Worker : MonoBehaviour
@@ -10,6 +11,8 @@ public class Worker : MonoBehaviour
     public Transform checkPoint;
     public LayerMask checkLayer;
     private float workerPoint = 1000f;
+
+    [SerializeField] private DamageNumber scoreNoti;
     
     
     private void Update()
@@ -21,7 +24,7 @@ public class Worker : MonoBehaviour
             transform.Translate(Vector3.right * workerSpeed * Time.deltaTime);
         }
 
-        workerPoint -= Time.deltaTime * 100f;
+        workerPoint -= Time.deltaTime * 70f;
 
 
     }
@@ -37,6 +40,8 @@ public class Worker : MonoBehaviour
         else if (col.CompareTag("Banana"))
         {
             //Play Animate Died
+            PlayerController.instance.Haha();
+            DamageNumber damageNumber = scoreNoti.Spawn(transform.position, workerPoint);
             GameManager.instance.AddScore(workerPoint);
             Destroy(col.gameObject);
             Destroy(gameObject);

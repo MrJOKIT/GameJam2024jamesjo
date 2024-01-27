@@ -318,6 +318,7 @@ MonoBehaviour:
   chargeImage: {fileID: 651949767}
   throwPoint: {fileID: 2002518910}
   bananaPrefab: {fileID: 7183825832658329229, guid: 910ab53324138e048aa313273de60e74, type: 3}
+  textPrefab: {fileID: 6751115275714823273, guid: ba9535ddad3f2b34682227895ad0dec6, type: 3}
 --- !u!212 &332040911
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1138,7 +1139,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -1480,6 +1481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da424de8bb3485944bf3c5514da6982b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 798904761}
   hp: 3
   hpImage:
   - {fileID: 881835474}
@@ -1784,7 +1786,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1673882517}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: PlayerCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

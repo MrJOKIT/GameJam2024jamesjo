@@ -27,7 +27,7 @@ public class Banana : MonoBehaviour
 
         transform.Translate(Vector3.up * shootPower * Time.deltaTime);
 
-        if (shootTimer > 10)
+        if (shootTimer > 6)
         {
             Destroy(gameObject);
         }

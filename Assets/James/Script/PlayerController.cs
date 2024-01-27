@@ -3,9 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DamageNumbersPro;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;
     public float movementSpeed;
     public Image chargeImage;
     public Transform throwPoint;
@@ -14,7 +16,13 @@ public class PlayerController : MonoBehaviour
     [Header("ThrowSetting")] 
     private float throwTimeCounter = 1.5f;
     private float throwTime;
-    
+
+    [Header("Text")] public DamageNumber textPrefab;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Update()
     {
@@ -76,5 +84,10 @@ public class PlayerController : MonoBehaviour
     {
          Transform banana = Instantiate(bananaPrefab,throwPoint.position,throwPoint.rotation);
          banana.GetComponent<Banana>().shootTimeCounter = power;
+    }
+
+    public void Haha()
+    {
+        DamageNumber damageNumber = textPrefab.Spawn(new Vector3(transform.position.x,transform.position.y + 0.5f,0), "HAHA");
     }
 }
