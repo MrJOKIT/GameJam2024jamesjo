@@ -305,19 +305,25 @@ MonoBehaviour:
   music:
   - soundName: BG
     clip: {fileID: 8300000, guid: 6509c378ce084554b947e957f5d38432, type: 3}
-    volume: 0.5
-  - soundName: MENU
+    volume: 0.3
+  - soundName: Menu
     clip: {fileID: 8300000, guid: 472ab8f0524137643862d6124e4e5043, type: 3}
-    volume: 0.5
+    volume: 0.3
+  - soundName: Tutorial
+    clip: {fileID: 8300000, guid: 47f45ef7b5767674393cc401fc325705, type: 3}
+    volume: 0.3
   sfx:
   - soundName: Throw
     clip: {fileID: 8300000, guid: 461c26bf9a12f70499e7a451cd281a89, type: 3}
-    volume: 0.5
+    volume: 0.3
   - soundName: Explosion
     clip: {fileID: 8300000, guid: aef33d2c1a7e52f4f80a65635f074306, type: 3}
-    volume: 0.5
+    volume: 0.3
   - soundName: LOL
     clip: {fileID: 8300000, guid: eae3d1129a95b7440b2c9ce37fb4ad94, type: 3}
-    volume: 0.5
+    volume: 0.3
+  - soundName: GAMEOVER
+    clip: {fileID: 8300000, guid: ff5f85da24bc943d1abdc5760a22bc81, type: 3}
+    volume: 0.3
   musicSource: {fileID: 7479547830385013886}
   sfxSource: {fileID: 8589754726411766503}

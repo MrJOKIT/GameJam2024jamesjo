@@ -31,9 +31,12 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        PlayerMovement();
-        PlayerLookAt();
-        PlayerThrow();
+        if (GameManager.instance.isGameOver == false)
+        {
+            PlayerMovement();
+            PlayerLookAt();
+            PlayerThrow();
+        }
     }
 
     private void PlayerMovement()
@@ -67,6 +70,7 @@ public class PlayerController : MonoBehaviour
             {
                 throwTime = throwTimeCounter;
             }
+            
         }
         else if (Input.GetMouseButtonUp(0))
         {

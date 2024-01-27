@@ -1781,28 +1781,8 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1028360622073947539, guid: 0e38333807c9b8d44ba55395290b9266, type: 3}
-      propertyPath: sfx.Array.data[0].volume
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1028360622073947539, guid: 0e38333807c9b8d44ba55395290b9266, type: 3}
-      propertyPath: sfx.Array.data[1].volume
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1028360622073947539, guid: 0e38333807c9b8d44ba55395290b9266, type: 3}
-      propertyPath: sfx.Array.data[2].volume
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1028360622073947539, guid: 0e38333807c9b8d44ba55395290b9266, type: 3}
-      propertyPath: music.Array.data[0].volume
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1028360622073947539, guid: 0e38333807c9b8d44ba55395290b9266, type: 3}
-      propertyPath: music.Array.data[1].volume
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1028360622073947539, guid: 0e38333807c9b8d44ba55395290b9266, type: 3}
-      propertyPath: music.Array.data[1].soundName
-      value: Menu
+      propertyPath: music.Array.data[2].soundName
+      value: Tutorial
       objectReference: {fileID: 0}
     - target: {fileID: 3160259445935143729, guid: 0e38333807c9b8d44ba55395290b9266, type: 3}
       propertyPath: m_LocalPosition.x

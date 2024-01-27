@@ -6,24 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="aade3653-0c57-4287-b8ba-24321da156d0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam2024jamesjo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam2024jamesjo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Prefab/EnemyWorker1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Prefab/EnemyWorker1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Prefab/EnemyWorker2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Prefab/EnemyWorker2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Prefab/EnemyWorker3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Prefab/EnemyWorker3.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/James/Scene/MainWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Scene/MainWorld.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Script/Banana.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Script/Banana.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Scene/MainWorld/Global Volume Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Scene/MainWorld/Global Volume Profile.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/James/Script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Script/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/James/Script/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Script/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/James/Script/WorkerSpawnerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Script/WorkerSpawnerManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jo/animations/redcar.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jo/animations/redcar.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Jo/prefab/SoundManage.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jo/prefab/SoundManage.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jo/prefab/Tank (1).prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jo/prefab/Tank (1).prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jo/prefab/cannonball.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jo/prefab/cannonball.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Jo/scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jo/scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jo/scripts/LoadScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jo/scripts/LoadScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jo/scenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jo/scenes/Tutorial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jo/scripts/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jo/scripts/SoundManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Jo/scripts/TankLookAtPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jo/scripts/TankLookAtPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jo/scripts/bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jo/scripts/bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jo/scripts/tutorial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jo/scripts/tutorial.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +27,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Jo/scripts/tutorial.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@14.0.10/Runtime/Volume/Volume.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Jo/scripts/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Jo/scripts/bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Jo/scripts/TankLookAtPlayer.cs" root0="FORCE_HIGHLIGHTING" />

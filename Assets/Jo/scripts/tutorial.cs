@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -7,6 +8,8 @@ public class Tutorial : MonoBehaviour
     private int index;
     private bool canClick = false;
     public GameObject ready;
+
+    
 
     void Update()
     {

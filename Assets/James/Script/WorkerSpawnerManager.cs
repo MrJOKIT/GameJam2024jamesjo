@@ -43,7 +43,7 @@ public class WorkerSpawnerManager : MonoBehaviour
 
     private void RandomSpawn()
     {
-        if (workerCountToSpawn > 0 && canSpawn && GameManager.instance.onTankSpawn == false)
+        if (workerCountToSpawn > 0 && canSpawn && GameManager.instance.onTankSpawn == false && GameManager.instance.isGameOver == false)
         {
             StartCoroutine(SpawnWorker());
             

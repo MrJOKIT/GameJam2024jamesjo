@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using Febucci.UI;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -13,12 +16,21 @@ public class GameManager : MonoBehaviour
     public TextAnimator_TMP scoreText;
     public int hp;
     public Image[] hpImage;
-    public GameObject gameOverCanvas;
     public float score;
     public bool onTankSpawn;
     public int tankLevel = 1;
     public Transform spawnTankPos;
     public float scoreToSpawnTank;
+    public bool isGameOver;
+    
+    [Header("Canvas")]
+    public GameObject gameOverCanvas;
+    public GameObject playerCanvas;
+    public Volume volume;
+
+    [Header("Menu")] 
+    private GameObject menuCanvas;
+    private bool onMenu;
 
     private void Awake()
     {
@@ -30,6 +42,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         SoundManager.instance.PlayMusic("BG");
+        
     }
 
     private void Update()
@@ -42,6 +55,18 @@ public class GameManager : MonoBehaviour
             onTankSpawn = true;
         }
         UpdateHp();
+
+        if (hp <= 0 && !isGameOver)
+        {
+            SoundManager.instance.PlaySfx("GAMEOVER");
+            StartCoroutine(GameOver());
+            isGameOver = true;
+        }
+
+        if (isGameOver)
+        {
+            SoundManager.instance.StopMusic();
+        }
         
     }
 
@@ -51,6 +76,13 @@ public class GameManager : MonoBehaviour
         {
             hp -= 1;
         }
+    }
+
+    IEnumerator GameOver()
+    {
+        playerCanvas.SetActive(false);
+        yield return new WaitForSeconds(2f);
+        gameOverCanvas.SetActive(true);
     }
 
     private void UpdateHp()
@@ -80,5 +112,22 @@ public class GameManager : MonoBehaviour
     {
         score += scorePoint;
         scoreText.SetText($"<bounce a=0.2>{Convert.ToInt64(score).ToString()}");
+    }
+
+    private void Menu()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) && !onMenu)
+        {
+            menuCanvas.SetActive(true);
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape) && onMenu)
+        {
+            menuCanvas.SetActive(false);
+        }
+    }
+
+    public void LoadSceneAsync(string sceneName)
+    {
+        SceneManager.LoadSceneAsync(sceneName);
     }
 }

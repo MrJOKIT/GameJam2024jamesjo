@@ -32,7 +32,7 @@ public class TankLookAtPlayer : MonoBehaviour
 
     void Update()
     {
-        if (player != null && !onDied)
+        if (player != null && !onDied && GameManager.instance.isGameOver == false)
         {
             Vector3 direction = player.position - transform.position;
             direction.Normalize();
