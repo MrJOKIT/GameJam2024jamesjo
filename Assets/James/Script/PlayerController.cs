@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DamageNumbersPro;
+using Random = UnityEngine.Random;
 
 public class PlayerController : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class PlayerController : MonoBehaviour
     private float throwTime;
 
     [Header("Text")] public DamageNumber textPrefab;
+    [SerializeField] private string[] dialogue;
 
     private void Awake()
     {
@@ -88,6 +90,6 @@ public class PlayerController : MonoBehaviour
 
     public void Haha()
     {
-        DamageNumber damageNumber = textPrefab.Spawn(new Vector3(transform.position.x,transform.position.y + 0.5f,0), "HAHA");
+        DamageNumber damageNumber = textPrefab.Spawn(new Vector3(transform.position.x,transform.position.y + 0.5f,0), dialogue[Random.Range(0,dialogue.Length)] );
     }
 }
