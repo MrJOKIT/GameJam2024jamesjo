@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Febucci.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,7 +9,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    public TextMeshProUGUI scoreText;
+    public TextAnimator_TMP scoreText;
     public int hp;
     public Image[] hpImage;
     private float score;
@@ -17,12 +18,13 @@ public class GameManager : MonoBehaviour
     {
         instance = this;
         hp = hpImage.Length;
+        scoreText.SetText($"<bounce a=0.2>{Convert.ToInt16(score).ToString()}");
     }
 
     private void Update()
     {
         UpdateHp();
-        scoreText.text = "SCORE: " + Convert.ToInt16(score);
+        
     }
 
     public void HpDecrease()
@@ -59,5 +61,6 @@ public class GameManager : MonoBehaviour
     public void AddScore(float scorePoint)
     {
         score += scorePoint;
+        scoreText.SetText($"<bounce a=0.2>{Convert.ToInt16(score).ToString()}");
     }
 }

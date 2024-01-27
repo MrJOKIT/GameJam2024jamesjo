@@ -11,6 +11,7 @@ public class Worker : MonoBehaviour
     private bool onWorkerInLine;
     private bool onDie;
     private Animator _animator;
+    private CapsuleCollider2D _capsuleCollider2D;
     public Transform checkPoint;
     public LayerMask checkLayer;
     private float workerPoint = 1000f;
@@ -20,6 +21,7 @@ public class Worker : MonoBehaviour
     private void Awake()
     {
         _animator = GetComponent<Animator>();
+        _capsuleCollider2D = GetComponent<CapsuleCollider2D>();
     }
 
     private void Update()
@@ -63,6 +65,7 @@ public class Worker : MonoBehaviour
     IEnumerator WorkerDied()
     {
         onDie = true;
+        _capsuleCollider2D.enabled = false;
         _animator.SetBool("Dead",true);
         ProCamera2DShake.Instance.Shake(0);
         PlayerController.instance.Haha();
