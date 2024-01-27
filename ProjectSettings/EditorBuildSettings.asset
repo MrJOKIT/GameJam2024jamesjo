@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/James/Scene/MainWorld.unity
-    guid: e9109921a5df57b4ca2e000cdb94fa4f
-  - enabled: 1
     path: Assets/Jo/scenes/Menu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Jo/scenes/Tutorial.unity
+    guid: 0ec47315ee5c6134f94be609a4b29200
+  - enabled: 1
+    path: Assets/James/Scene/MainWorld.unity
+    guid: e9109921a5df57b4ca2e000cdb94fa4f
   m_configObjects: {}

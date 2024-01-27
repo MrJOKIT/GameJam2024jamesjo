@@ -12,7 +12,7 @@ public class LoadScene : MonoBehaviour
     
     public void ChangeScene()
     {
-        SceneManager.LoadScene("MainWorld");
+        SceneManager.LoadScene(name);
     }
 
     public void ExitGame()
