@@ -3,6 +3,7 @@ using UnityEngine;
 public class TankLookAtPlayer : MonoBehaviour
 {
     public Transform player;
+    public Transform turret;
     private float moveSpeed = 3f;
     private float shootingCooldown = 3f;
     private float lastShotTime;
@@ -24,14 +25,14 @@ public class TankLookAtPlayer : MonoBehaviour
 
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             angle += 90f;
-            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            turret.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-            MoveToPosition(new Vector3(0, 2.3f, 0));
+            MoveToPosition(new Vector3(0, 4.6f, 0));
 
             if (Time.time - lastShotTime >= shootingCooldown)
             {
                 
-                if (transform.position == new Vector3(0, 2.3f, 0))
+                if (transform.position == new Vector3(0, 4.6f, 0))
                 {
                     Shoot();
                     
