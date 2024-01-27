@@ -9,18 +9,24 @@ public class Worker : MonoBehaviour
 {
     [SerializeField] private float workerSpeed;
     private bool onWorkerInLine;
+    private bool onDie;
+    private Animator _animator;
     public Transform checkPoint;
     public LayerMask checkLayer;
     private float workerPoint = 1000f;
     [SerializeField] private float scoreMultiper;
     [SerializeField] private DamageNumber scoreNoti;
-    
-    
+
+    private void Awake()
+    {
+        _animator = GetComponent<Animator>();
+    }
+
     private void Update()
     {
         onWorkerInLine = Physics2D.Raycast(checkPoint.position, Vector2.right, 2.5f,checkLayer);
 
-        if (!onWorkerInLine)
+        if (!onWorkerInLine && !onDie)
         {
             transform.Translate(Vector3.right * workerSpeed * Time.deltaTime);
         }
@@ -41,7 +47,7 @@ public class Worker : MonoBehaviour
         else if (col.CompareTag("Banana"))
         {
             Destroy(col.gameObject);
-            WorkerDied();
+            StartCoroutine(WorkerDied());
         }
     }
 
@@ -50,18 +56,23 @@ public class Worker : MonoBehaviour
         if (other.CompareTag("Banana"))
         {
             Destroy(other.gameObject);
-            WorkerDied();
+            StartCoroutine(WorkerDied());
         }
     }
 
-    private void WorkerDied()
+    IEnumerator WorkerDied()
     {
+        onDie = true;
+        _animator.SetBool("Dead",true);
         ProCamera2DShake.Instance.Shake(0);
         PlayerController.instance.Haha();
         DamageNumber damageNumber = scoreNoti.Spawn(transform.position, workerPoint);
         GameManager.instance.AddScore(workerPoint);
+        yield return new WaitForSeconds(1f);
         Destroy(gameObject);
     }
+    
+    
 
     private void OnDrawGizmos()
     {

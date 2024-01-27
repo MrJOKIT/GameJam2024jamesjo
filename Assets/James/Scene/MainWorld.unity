@@ -238,7 +238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 305506268}
   - component: {fileID: 305506267}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SpawnerManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,9 +266,9 @@ MonoBehaviour:
   workerCountToSpawn: 20
   workerSpawn: []
   workerPrefab:
-  - {fileID: 1231096597948937568, guid: 94561a3602e914043a056e6575431ec8, type: 3}
-  - {fileID: 1231096597948937568, guid: 97d428606c5d0d34da4c673e7c651345, type: 3}
-  - {fileID: 1231096597948937568, guid: 3355ff85a96383443960c2bce8d46b83, type: 3}
+  - {fileID: 4468327946484202636, guid: 77797237c5fb88846bcb760ed3bc857b, type: 3}
+  - {fileID: 4468327946484202636, guid: 2588ca9c6db77b94f94b7db4a897b1dd, type: 3}
+  - {fileID: 3277787122069191573, guid: bdbe0b00be67b084a9d5be11fb1e5fbc, type: 3}
 --- !u!4 &305506268
 Transform:
   m_ObjectHideFlags: 0
