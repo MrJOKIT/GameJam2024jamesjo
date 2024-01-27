@@ -6,12 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="aade3653-0c57-4287-b8ba-24321da156d0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam2024jamesjo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam2024jamesjo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/DamageNumbersPro/Materials/Pixel/Pixel-Glow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/DamageNumbersPro/Materials/Pixel/Pixel-Glow.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Haha.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Haha.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/James/Scene/MainWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Scene/MainWorld.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Script/Banana.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Script/Banana.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/James/Script/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Script/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Throw.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Throw.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Script/Worker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Script/Worker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jo/animations/worker walk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jo/animations/worker walk.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/char_a_p1_0bas_humn_v01_56.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/char_a_p1_0bas_humn_v01_56.controller" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

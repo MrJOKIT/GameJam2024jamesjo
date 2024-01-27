@@ -40,16 +40,29 @@ public class Worker : MonoBehaviour
         }
         else if (col.CompareTag("Banana"))
         {
-            //Play Animate Died
-            ProCamera2DShake.Instance.Shake(0);
-            PlayerController.instance.Haha();
-            DamageNumber damageNumber = scoreNoti.Spawn(transform.position, workerPoint);
-            GameManager.instance.AddScore(workerPoint);
             Destroy(col.gameObject);
             Destroy(gameObject);
             
             
         }
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Banana"))
+        {
+            Destroy(other.gameObject);
+            WorkerDied();
+        }
+    }
+
+    private void WorkerDied()
+    {
+        ProCamera2DShake.Instance.Shake(0);
+        PlayerController.instance.Haha();
+        DamageNumber damageNumber = scoreNoti.Spawn(transform.position, workerPoint);
+        GameManager.instance.AddScore(workerPoint);
+        Destroy(gameObject);
     }
 
     private void OnDrawGizmos()
