@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aade3653-0c57-4287-b8ba-24321da156d0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam2024jamesjo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam2024jamesjo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Prefab/EnemyWorker1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Prefab/EnemyWorker1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Prefab/EnemyWorker2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Prefab/EnemyWorker2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Prefab/EnemyWorker3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Prefab/EnemyWorker3.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/James/Scene/MainWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Scene/MainWorld.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/ScoreNoti.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/ScoreNoti.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Script/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Script/Worker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Script/Worker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/char_a_p1_0bas_humn_v01_56.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/char_a_p1_0bas_humn_v01_56.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
