@@ -41,9 +41,7 @@ public class Worker : MonoBehaviour
         else if (col.CompareTag("Banana"))
         {
             Destroy(col.gameObject);
-            Destroy(gameObject);
-            
-            
+            WorkerDied();
         }
     }
 
