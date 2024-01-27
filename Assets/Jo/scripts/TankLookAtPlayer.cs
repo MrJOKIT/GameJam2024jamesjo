@@ -54,6 +54,7 @@ public class TankLookAtPlayer : MonoBehaviour
     }
     void Shoot()
     {
+        SoundManager.instance.PlaySfx("Explosion");
         Instantiate(bulletPrefab, firePoint.transform.position, firePoint.transform.rotation);
     }
 }

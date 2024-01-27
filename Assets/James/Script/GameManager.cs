@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public TextAnimator_TMP scoreText;
     public int hp;
     public Image[] hpImage;
+    public GameObject gameOverCanvas;
     private float score;
 
     private void Awake()
@@ -19,6 +20,11 @@ public class GameManager : MonoBehaviour
         instance = this;
         hp = hpImage.Length;
         scoreText.SetText($"<bounce a=0.2>{Convert.ToInt16(score).ToString()}");
+    }
+
+    private void Start()
+    {
+        SoundManager.instance.PlayMusic("BG");
     }
 
     private void Update()
