@@ -91,10 +91,13 @@ public class PlayerController : MonoBehaviour
     {
          Transform banana = Instantiate(bananaPrefab,throwPoint.position,throwPoint.rotation);
          banana.GetComponent<Banana>().shootTimeCounter = power;
+         SoundManager.instance.Play(SoundManager.SoundName.slip);
     }
 
     public void Haha()
     {
+       
         DamageNumber damageNumber = textPrefab.Spawn(new Vector3(transform.position.x,transform.position.y + 0.5f,0), dialogue[Random.Range(0,dialogue.Length)] );
+        SoundManager.instance.Play(SoundManager.SoundName.lol);
     }
 }

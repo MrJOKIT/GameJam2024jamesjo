@@ -31,6 +31,10 @@ public class SoundManager : MonoBehaviour
     public enum SoundName
     {
         BG,
+        slip,
+        
+        hurt,
+        lol
     }
     void Start()
     {
