@@ -47,6 +47,8 @@ public class Worker : MonoBehaviour
             GameManager.instance.AddScore(workerPoint);
             Destroy(col.gameObject);
             Destroy(gameObject);
+            
+            
         }
     }
 
