@@ -99,4 +99,6 @@ public class PlayerController : MonoBehaviour
         DamageNumber damageNumber = textPrefab.Spawn(new Vector3(transform.position.x,transform.position.y + 0.5f,0), dialogue[Random.Range(0,dialogue.Length)] );
         SoundManager.instance.PlaySfx("LOL");
     }
+
+    
 }

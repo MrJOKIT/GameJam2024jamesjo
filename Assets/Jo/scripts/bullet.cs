@@ -1,3 +1,4 @@
+using Com.LuisPedroFonseca.ProCamera2D;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -17,9 +18,15 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    void OnTriggerEnter2D(Collider2D other)
+    
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        Destroy(gameObject);
+        if(col.CompareTag("Player"))
+        {
+            GameManager.instance.HpDecrease();
+            ProCamera2DShake.Instance.Shake(1);
+            Destroy(gameObject);
+        }
     }
+    
 }

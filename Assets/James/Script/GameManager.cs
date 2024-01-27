@@ -9,17 +9,22 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    public GameObject tank;
     public TextAnimator_TMP scoreText;
     public int hp;
     public Image[] hpImage;
     public GameObject gameOverCanvas;
-    private float score;
+    public float score;
+    public bool onTankSpawn;
+    public int tankLevel = 1;
+    public Transform spawnTankPos;
+    public float scoreToSpawnTank;
 
     private void Awake()
     {
         instance = this;
         hp = hpImage.Length;
-        scoreText.SetText($"<bounce a=0.2>{Convert.ToInt16(score).ToString()}");
+        scoreText.SetText($"<bounce a=0.2>{Convert.ToInt64(score).ToString()}");
     }
 
     private void Start()
@@ -29,6 +34,13 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        if (score > scoreToSpawnTank && !onTankSpawn)
+        {
+            Instantiate(tank, spawnTankPos.position, spawnTankPos.rotation);
+            scoreToSpawnTank *= 2;
+            tankLevel += 1;
+            onTankSpawn = true;
+        }
         UpdateHp();
         
     }
@@ -67,6 +79,6 @@ public class GameManager : MonoBehaviour
     public void AddScore(float scorePoint)
     {
         score += scorePoint;
-        scoreText.SetText($"<bounce a=0.2>{Convert.ToInt16(score).ToString()}");
+        scoreText.SetText($"<bounce a=0.2>{Convert.ToInt64(score).ToString()}");
     }
 }

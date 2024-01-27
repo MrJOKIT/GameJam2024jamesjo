@@ -6,6 +6,7 @@ using Random = UnityEngine.Random;
 
 public class WorkerSpawnerManager : MonoBehaviour
 {
+    public static WorkerSpawnerManager instance;
     [SerializeField] private float spawnDelay;
     public Transform[] spawnPoint;
     [SerializeField] private int workerCountToSpawn;
@@ -15,6 +16,11 @@ public class WorkerSpawnerManager : MonoBehaviour
     [Header("Worker Type")] 
     public GameObject[] workerPrefab;
 
+    private void Awake()
+    {
+        instance = this;
+    }
+
     private void Start()
     {
         SetUpSpawner();
@@ -22,7 +28,7 @@ public class WorkerSpawnerManager : MonoBehaviour
         
     }
 
-    private void SetUpSpawner()
+    public void SetUpSpawner()
     {
         for (int i = 0; i < workerCountToSpawn; i++)
         {
@@ -37,10 +43,10 @@ public class WorkerSpawnerManager : MonoBehaviour
 
     private void RandomSpawn()
     {
-        if (workerCountToSpawn > 0 && canSpawn)
+        if (workerCountToSpawn > 0 && canSpawn && GameManager.instance.onTankSpawn == false)
         {
             StartCoroutine(SpawnWorker());
-            workerCountToSpawn -= 1;
+            
         }
         
     }
@@ -50,9 +56,15 @@ public class WorkerSpawnerManager : MonoBehaviour
         canSpawn = false;
         int spawnNumber = Random.Range(0, spawnPoint.Length);
         Instantiate(workerSpawn[0],spawnPoint[spawnNumber].position,spawnPoint[spawnNumber].rotation);
+        workerCountToSpawn -= 1;
         workerSpawn.Remove(workerSpawn[0]);
-        Debug.Log($"Spawn way{spawnNumber}");
+        //Debug.Log($"Spawn way{spawnNumber}");
         yield return new WaitForSeconds(spawnDelay);
         canSpawn = true;
+    }
+
+    public void AddWorker(int count)
+    {
+        workerCountToSpawn += count;
     }
 }
