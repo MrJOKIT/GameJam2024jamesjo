@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Febucci.UI;
+using Jo.scripts;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -32,6 +33,7 @@ public class GameManager : MonoBehaviour
     public GameObject menuCanvas;
     //public GameObject optionCanvas;
     public bool onMenu;
+    public GameObject pauseIcon, resumeIcon;
 
     [Header("Ability")] 
     public GameObject abilityCanvas;
@@ -48,7 +50,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        SoundManager.instance.PlayMusic("BG");
+        SoundManager.Instance.PlayMusic("BG");
         
     }
 
@@ -66,14 +68,14 @@ public class GameManager : MonoBehaviour
 
         if (hp <= 0 && !isGameOver)
         {
-            SoundManager.instance.PlaySfx("GAMEOVER");
+            SoundManager.Instance.PlaySfx("GAMEOVER");
             StartCoroutine(GameOver());
             isGameOver = true;
         }
 
         if (isGameOver)
         {
-            SoundManager.instance.StopMusic();
+            SoundManager.Instance.StopMusic();
         }
         
     }
@@ -139,18 +141,24 @@ public class GameManager : MonoBehaviour
         onMenu = false;
         //optionCanvas.SetActive(false);
         menuCanvas.SetActive(false);
+        pauseIcon.SetActive(true);
+        resumeIcon.SetActive(false);
         Time.timeScale = 1f;
     }
 
     public void PauseGame()
     {
         menuCanvas.SetActive(true);
+        pauseIcon.SetActive(false);
+        resumeIcon.SetActive(true);
         onMenu = true;
         Time.timeScale = 0f;
     }
 
     public void LoadSceneAsync(string sceneName)
     {
+        Time.timeScale = 1f;
+        SoundManager.Instance.SetupForNewScene();
         SceneManager.LoadSceneAsync(sceneName);
     }
 
@@ -164,7 +172,7 @@ public class GameManager : MonoBehaviour
 
     public void SelectRewardUpPower()
     {
-        SoundManager.instance.PlaySfx("CLICK");
+        SoundManager.Instance.PlaySfx("CLICK");
         Banana.damage += 2.5f;
         DissapearCard();
         abilityCanvas.SetActive(false);
@@ -175,7 +183,7 @@ public class GameManager : MonoBehaviour
     
     public void SelectRewardUpSpeed()
     {
-        SoundManager.instance.PlaySfx("CLICK");
+        SoundManager.Instance.PlaySfx("CLICK");
         PlayerController.instance.movementSpeed += 0.3f;
         DissapearCard();
         abilityCanvas.SetActive(false);
@@ -186,7 +194,7 @@ public class GameManager : MonoBehaviour
     
     public void SelectRewardUpThrow()
     {
-        SoundManager.instance.PlaySfx("CLICK");
+        SoundManager.Instance.PlaySfx("CLICK");
         PlayerController.instance.chargeThrowSpeed += 0.1f;
         DissapearCard();
         abilityCanvas.SetActive(false);
@@ -198,12 +206,12 @@ public class GameManager : MonoBehaviour
     IEnumerator ShowCard()
     {
         animatorsCard[0].SetBool("Show",true);
-        SoundManager.instance.PlaySfx("DROP");
+        SoundManager.Instance.PlaySfx("DROP");
         yield return new WaitForSeconds(0.5f);
         animatorsCard[1].SetBool("Show",true);
-        SoundManager.instance.PlaySfx("DROP");
+        SoundManager.Instance.PlaySfx("DROP");
         yield return new WaitForSeconds(0.5f);
-        SoundManager.instance.PlaySfx("DROP");
+        SoundManager.Instance.PlaySfx("DROP");
         animatorsCard[2].SetBool("Show",true);
     }
 

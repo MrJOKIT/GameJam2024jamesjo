@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using Com.LuisPedroFonseca.ProCamera2D;
 using System.Collections;
+using Jo.scripts;
 
 
 public class TankLookAtPlayer : MonoBehaviour
@@ -72,7 +73,7 @@ public class TankLookAtPlayer : MonoBehaviour
     }
     void Shoot()
     {
-        SoundManager.instance.PlaySfx("Explosion");
+        SoundManager.Instance.PlaySfx("Explosion");
         Instantiate(bulletPrefab, firePoint.transform.position, firePoint.transform.rotation);
     }
     private void OnTriggerEnter2D(Collider2D col)
@@ -110,7 +111,7 @@ public class TankLookAtPlayer : MonoBehaviour
         onDied = true;
         explode.gameObject.SetActive(true);
         ProCamera2DShake.Instance.Shake(0);
-        SoundManager.instance.PlaySfx("TankDestroy");
+        SoundManager.Instance.PlaySfx("TankDestroy");
         WorkerSpawnerManager.instance.AddWorker( (GameManager.instance.tankLevel * 20));
         WorkerSpawnerManager.instance.SetUpSpawner();
         GameManager.instance.ShowReward();

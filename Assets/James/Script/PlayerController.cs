@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DamageNumbersPro;
+using Jo.scripts;
 using Random = UnityEngine.Random;
 
 public class PlayerController : MonoBehaviour
@@ -96,13 +97,13 @@ public class PlayerController : MonoBehaviour
     {
          Transform banana = Instantiate(bananaPrefab,throwPoint.position,throwPoint.rotation);
          banana.GetComponent<Banana>().shootTimeCounter = power;
-         SoundManager.instance.PlaySfx("Throw");
+         SoundManager.Instance.PlaySfx("Throw");
     }
 
     public void Haha()
     {
         DamageNumber damageNumber = textPrefab.Spawn(new Vector3(transform.position.x,transform.position.y + 0.5f,0), dialogue[Random.Range(0,dialogue.Length)] );
-        SoundManager.instance.PlaySfx("LOL");
+        SoundManager.Instance.PlaySfx("LOL");
     }
 
     

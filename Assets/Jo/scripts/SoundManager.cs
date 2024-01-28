@@ -2,72 +2,83 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SoundManager : MonoBehaviour
+namespace Jo.scripts
 {
-    public static SoundManager instance;
-    [SerializeField] private Sound[] music,sfx;
-    public AudioSource musicSource,sfxSource;
-    public Slider musicSlider, sfxSlider;
+    public class SoundManager : MonoBehaviour
+    {
+        public static SoundManager Instance;
+        [SerializeField] private Sound[] music,sfx;
+        public AudioSource musicSource,sfxSource;
+        public Slider musicSlider, sfxSlider;
+        public GameObject optionCanvas,optionButton1,optionButton2;
 
-    [Serializable]
-    public struct Sound
-    {
-        public string soundName;
-        public AudioClip clip;
-        //[Range(0f, 1f)] public float volume;
-    }
-    
-    private void Awake()
-    {
-        if (instance == null)
+        [Serializable]
+        public struct Sound
         {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
+            public string soundName;
+            public AudioClip clip;
+            //[Range(0f, 1f)] public float volume;
         }
-        else
-        {
-            Destroy(this);
-        }
-    }
-
-    private void Start()
-    {
-        musicSlider.value = PlayerPrefs.GetFloat("MusicVolume");
-        sfxSlider.value = PlayerPrefs.GetFloat("SfxVolume");
-    }
     
+        private void Awake()
+        {
+            if (Instance == null)
+            {
+                Instance = this;
+                DontDestroyOnLoad(gameObject);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
 
-    public void PlayMusic(string musicName)
-    {
-        Sound s = Array.Find(music, x => x.soundName == musicName);
+        private void Start()
+        {
+            musicSlider.value = PlayerPrefs.GetFloat("MusicVolume");
+            sfxSlider.value = PlayerPrefs.GetFloat("SfxVolume");
+        
+        }
 
-        musicSource.clip = s.clip;
-        //musicSource.volume = s.volume;
-        musicSource.Play();
-    }
+        public void SetupForNewScene()
+        {
+            optionCanvas.SetActive(false);
+            optionButton1.SetActive(true);
+            optionButton2.SetActive(false);
+        }
 
-    public void PlaySfx(string sfxName)
-    {
-        Sound s = Array.Find(sfx, x => x.soundName == sfxName);
+        public void PlayMusic(string musicName)
+        {
+            Sound s = Array.Find(music, x => x.soundName == musicName);
 
-        //sfxSource.volume = s.volume;
-        sfxSource.PlayOneShot(s.clip);
-    }
+            musicSource.clip = s.clip;
+            //musicSource.volume = s.volume;
+            musicSource.Play();
+        }
 
-    public void StopMusic()
-    {
-        musicSource.Stop();
-    }
+        public void PlaySfx(string sfxName)
+        {
+            Sound s = Array.Find(sfx, x => x.soundName == sfxName);
 
-    public void ChangeMusicVolume(float slider)
-    {
-        musicSource.volume = slider;
-        PlayerPrefs.SetFloat("MusicVolume",slider);
-    }
+            //sfxSource.volume = s.volume;
+            sfxSource.PlayOneShot(s.clip);
+        }
 
-    public void ChangeSfxVolume(float slider)
-    {
-        sfxSource.volume = slider;
-        PlayerPrefs.SetFloat("SfxVolume",slider);
+        public void StopMusic()
+        {
+            musicSource.Stop();
+        }
+
+        public void ChangeMusicVolume(float slider)
+        {
+            musicSource.volume = slider;
+            PlayerPrefs.SetFloat("MusicVolume",slider);
+        }
+
+        public void ChangeSfxVolume(float slider)
+        {
+            sfxSource.volume = slider;
+            PlayerPrefs.SetFloat("SfxVolume",slider);
+        }
     }
 }

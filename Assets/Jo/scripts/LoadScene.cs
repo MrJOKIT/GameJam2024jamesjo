@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Jo.scripts;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,11 +12,12 @@ public class LoadScene : MonoBehaviour
 
     private void Start()
     {
-        SoundManager.instance.PlayMusic("Menu");
+        SoundManager.Instance.PlayMusic("Menu");
     }
 
     public void ChangeScene()
     {
+        SoundManager.Instance.SetupForNewScene();
         SceneManager.LoadScene(name);
     }
 
