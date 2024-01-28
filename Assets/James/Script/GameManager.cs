@@ -29,8 +29,9 @@ public class GameManager : MonoBehaviour
     public Volume volume;
 
     [Header("Menu")] 
-    private GameObject menuCanvas;
-    private bool onMenu;
+    public GameObject menuCanvas;
+    //public GameObject optionCanvas;
+    public bool onMenu;
 
     [Header("Ability")] 
     public GameObject abilityCanvas;
@@ -61,6 +62,7 @@ public class GameManager : MonoBehaviour
             onTankSpawn = true;
         }
         UpdateHp();
+        Menu();
 
         if (hp <= 0 && !isGameOver)
         {
@@ -124,12 +126,27 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && !onMenu)
         {
-            menuCanvas.SetActive(true);
+            PauseGame();
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && onMenu)
         {
-            menuCanvas.SetActive(false);
+            CloseMenu();
         }
+    }
+
+    public void CloseMenu()
+    {
+        onMenu = false;
+        //optionCanvas.SetActive(false);
+        menuCanvas.SetActive(false);
+        Time.timeScale = 1f;
+    }
+
+    public void PauseGame()
+    {
+        menuCanvas.SetActive(true);
+        onMenu = true;
+        Time.timeScale = 0f;
     }
 
     public void LoadSceneAsync(string sceneName)
@@ -196,4 +213,6 @@ public class GameManager : MonoBehaviour
         animatorsCard[1].SetBool("Show",false);
         animatorsCard[2].SetBool("Show",false);
     }
+
+    
 }

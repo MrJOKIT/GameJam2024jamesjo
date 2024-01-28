@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (GameManager.instance.isGameOver == false && GameManager.instance.onAbility == false) 
+        if (GameManager.instance.isGameOver == false && GameManager.instance.onAbility == false && GameManager.instance.onMenu == false) 
         {
             PlayerMovement();
             PlayerLookAt();

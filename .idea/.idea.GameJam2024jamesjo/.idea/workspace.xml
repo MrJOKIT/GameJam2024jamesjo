@@ -6,18 +6,102 @@
   <component name="ChangeListManager">
     <list default="true" id="aade3653-0c57-4287-b8ba-24321da156d0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam2024jamesjo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam2024jamesjo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/DamageNumbersPro/Materials/Pixel/Pixel-Default.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/DamageNumbersPro/Materials/Pixel/Pixel-Default.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/DamageNumbersPro/Materials/Pixel/Pixel-Outline.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/DamageNumbersPro/Materials/Pixel/Pixel-Outline.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/DamageNumbersPro/Materials/Smear/Smear Outline.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/DamageNumbersPro/Materials/Smear/Smear Outline.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Animations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Animations/2D.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Animations/2D/Running2D.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Animations/2D/Running2D.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Animations/3D.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Animations/3D/Running.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Animations/3D/Running.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Animations/Visualization.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Animations/Visualization.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Materials/Running.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Materials/Running.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Models/Character.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Models/Character/Character.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Models/Character/Character.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Models/Character/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Models/Character/Materials/Built-In.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Models/Character/Materials/Built-In.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Models/Character/Materials/URP.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Models/Character/Materials/URP.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Models/Character/Materials/battalion-leader-heraklios_diffuse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Models/Character/Materials/battalion-leader-heraklios_diffuse.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Models/Character/Materials/battalion-leader-heraklios_normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Models/Character/Materials/battalion-leader-heraklios_normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Models/Character/Materials/battalion-leader-heraklios_specular.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Models/Character/Materials/battalion-leader-heraklios_specular.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Models/Character/TempCharacter.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Models/Character/TempCharacter.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Sprites/TempCharacter_Running.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Sprites/TempCharacter_Running.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Sprites/TempCharacter_Running_NormalMap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/Sprites/TempCharacter_Running_NormalMap.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/UI/Media_Background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/UI/Media_Background.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/URP.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/URP/2D Renderer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/URP/2D Renderer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/URP/URP Renderer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/DEMO/URP/URP Renderer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Resources/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Resources/Editor/ConvertLogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Resources/Editor/ConvertLogo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Resources/Editor/ConvertLogoPSD.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Resources/Editor/ConvertLogoPSD.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Resources/Editor/Pixelate Logo Dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Resources/Editor/Pixelate Logo Dark.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Resources/Editor/Pixelate Logo Light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Resources/Editor/Pixelate Logo Light.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Resources/Editor/SliceLogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Resources/Editor/SliceLogo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Resources/Editor/SliceLogoPSD.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Resources/Editor/SliceLogoPSD.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Resources/Editor/preview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Resources/Editor/preview.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Scenes/Capturing.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Scenes/Capturing.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Scenes/Visualize.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Scenes/Visualize.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Scripts/AutoSpriteSlicer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Scripts/AutoSpriteSlicer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Scripts/Editor/PixelateEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Scripts/Editor/PixelateEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Scripts/PixelateCaptureManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Scripts/PixelateCaptureManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Shaders/ToonLitSprite.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Shaders/ToonLitSprite.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Shaders/ViewSpaceNormal.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Shaders/ViewSpaceNormal.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Standard Guide.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/Standard Guide.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/URP Guide.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Pixelate/URP Guide.txt.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/James/Haha.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Haha.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/James/Scene/MainWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Scene/MainWorld.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/ScoreNoti.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/ScoreNoti.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Script/Banana.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Script/Banana.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/James/Script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Script/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/James/Script/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Script/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Script/Worker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Script/Worker.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Jo/prefab/SoundManage.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jo/prefab/SoundManage.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Jo/scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jo/scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jo/scenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jo/scenes/Tutorial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Jo/scripts/TankLookAtPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jo/scripts/TankLookAtPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jo/scripts/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jo/scripts/SoundManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerDirection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerDirection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +135,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../GameJamBetaBuild\ProjectGameJam2024.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="E:\GameJamBetaBuild" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -80,7 +172,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706404720961</updated>
-      <workItem from="1706404733731" duration="6745000" />
+      <workItem from="1706404733731" duration="11766000" />
     </task>
     <servers />
   </component>
