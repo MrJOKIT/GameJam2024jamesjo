@@ -9,7 +9,7 @@ using Random = UnityEngine.Random;
 public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
-    public float movementSpeed;
+    public float movementSpeed = 5f;
     public Image chargeImage;
     public Transform throwPoint;
     public Transform bananaPrefab;
@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     [Header("ThrowSetting")] 
     private float throwTimeCounter = 1.5f;
     private float throwTime;
+    public float chargeThrowSpeed = 1f;
     private Animator _animator;
 
     [Header("Text")] public DamageNumber textPrefab;
@@ -31,7 +32,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (GameManager.instance.isGameOver == false)
+        if (GameManager.instance.isGameOver == false && GameManager.instance.onAbility == false) 
         {
             PlayerMovement();
             PlayerLookAt();
@@ -64,7 +65,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            throwTime += Time.deltaTime;
+            throwTime += Time.deltaTime * chargeThrowSpeed;
             _animator.SetBool("Throw",true);
             if (throwTime >= throwTimeCounter)
             {

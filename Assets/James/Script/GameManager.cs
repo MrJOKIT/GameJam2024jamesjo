@@ -32,6 +32,12 @@ public class GameManager : MonoBehaviour
     private GameObject menuCanvas;
     private bool onMenu;
 
+    [Header("Ability")] 
+    public GameObject abilityCanvas;
+    public bool onAbility;
+    public Animator[] animatorsCard;
+    
+
     private void Awake()
     {
         instance = this;
@@ -72,7 +78,7 @@ public class GameManager : MonoBehaviour
 
     public void HpDecrease()
     {
-        if (hp > 0)
+        if (hp > 0 && !onAbility)
         {
             hp -= 1;
         }
@@ -129,5 +135,65 @@ public class GameManager : MonoBehaviour
     public void LoadSceneAsync(string sceneName)
     {
         SceneManager.LoadSceneAsync(sceneName);
+    }
+
+    public void ShowReward()
+    {
+        onAbility = true;
+        playerCanvas.SetActive(false);
+        abilityCanvas.SetActive(true);
+        StartCoroutine(ShowCard());
+    }
+
+    public void SelectRewardUpPower()
+    {
+        SoundManager.instance.PlaySfx("CLICK");
+        Banana.damage += 2.5f;
+        DissapearCard();
+        abilityCanvas.SetActive(false);
+        playerCanvas.SetActive(true);
+        onTankSpawn = false;
+        onAbility = false;
+    }
+    
+    public void SelectRewardUpSpeed()
+    {
+        SoundManager.instance.PlaySfx("CLICK");
+        PlayerController.instance.movementSpeed += 0.3f;
+        DissapearCard();
+        abilityCanvas.SetActive(false);
+        playerCanvas.SetActive(true);
+        onTankSpawn = false;
+        onAbility = false;
+    }
+    
+    public void SelectRewardUpThrow()
+    {
+        SoundManager.instance.PlaySfx("CLICK");
+        PlayerController.instance.chargeThrowSpeed += 0.1f;
+        DissapearCard();
+        abilityCanvas.SetActive(false);
+        playerCanvas.SetActive(true);
+        onTankSpawn = false;
+        onAbility = false;
+    }
+
+    IEnumerator ShowCard()
+    {
+        animatorsCard[0].SetBool("Show",true);
+        SoundManager.instance.PlaySfx("DROP");
+        yield return new WaitForSeconds(0.5f);
+        animatorsCard[1].SetBool("Show",true);
+        SoundManager.instance.PlaySfx("DROP");
+        yield return new WaitForSeconds(0.5f);
+        SoundManager.instance.PlaySfx("DROP");
+        animatorsCard[2].SetBool("Show",true);
+    }
+
+    private void DissapearCard()
+    {
+        animatorsCard[0].SetBool("Show",false);
+        animatorsCard[1].SetBool("Show",false);
+        animatorsCard[2].SetBool("Show",false);
     }
 }

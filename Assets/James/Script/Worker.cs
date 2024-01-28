@@ -64,11 +64,11 @@ public class Worker : MonoBehaviour
 
     IEnumerator WorkerDied()
     {
+        PlayerController.instance.Haha();
         onDie = true;
         _capsuleCollider2D.enabled = false;
         _animator.SetBool("Dead",true);
         ProCamera2DShake.Instance.Shake(0);
-        PlayerController.instance.Haha();
         DamageNumber damageNumber = scoreNoti.Spawn(transform.position, workerPoint);
         GameManager.instance.AddScore(workerPoint);
         yield return new WaitForSeconds(1f);

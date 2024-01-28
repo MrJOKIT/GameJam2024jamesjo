@@ -174,7 +174,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -320,10 +320,19 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: aef33d2c1a7e52f4f80a65635f074306, type: 3}
     volume: 0.3
   - soundName: LOL
-    clip: {fileID: 8300000, guid: eae3d1129a95b7440b2c9ce37fb4ad94, type: 3}
+    clip: {fileID: 8300000, guid: 769d8e92332df7545af4b0d94859ad33, type: 3}
     volume: 0.3
   - soundName: GAMEOVER
     clip: {fileID: 8300000, guid: ff5f85da24bc943d1abdc5760a22bc81, type: 3}
+    volume: 0.3
+  - soundName: CLICK
+    clip: {fileID: 8300000, guid: b43d102aac6b145468dcaa94a5cccae1, type: 3}
+    volume: 0.3
+  - soundName: DROP
+    clip: {fileID: 8300000, guid: 19f89c6e740e7447f9e12a8310d3e973, type: 3}
+    volume: 0.3
+  - soundName: TankDestroy
+    clip: {fileID: 8300000, guid: af6f976bc406cb84b987a8b5d42103e5, type: 3}
     volume: 0.3
   musicSource: {fileID: 7479547830385013886}
   sfxSource: {fileID: 8589754726411766503}

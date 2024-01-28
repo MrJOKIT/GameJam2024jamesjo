@@ -110,10 +110,10 @@ public class TankLookAtPlayer : MonoBehaviour
         onDied = true;
         explode.gameObject.SetActive(true);
         ProCamera2DShake.Instance.Shake(0);
-        PlayerController.instance.Haha();
+        SoundManager.instance.PlaySfx("TankDestroy");
         WorkerSpawnerManager.instance.AddWorker( (GameManager.instance.tankLevel * 20));
         WorkerSpawnerManager.instance.SetUpSpawner();
-        GameManager.instance.onTankSpawn = false;
+        GameManager.instance.ShowReward();
         yield return new WaitForSeconds(2f);
         Destroy(gameObject);
     }

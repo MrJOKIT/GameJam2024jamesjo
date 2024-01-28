@@ -9,7 +9,7 @@ public class Banana : MonoBehaviour
     public float shootTimeCounter;
     private float shootTimer;
     private Animator _animator;
-    public static int damage = 5;
+    public static float damage = 5;
 
     private void Start()
     {
