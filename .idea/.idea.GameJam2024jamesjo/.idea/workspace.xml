@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aade3653-0c57-4287-b8ba-24321da156d0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Jo/prefab/SoundManage.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jo/prefab/SoundManage.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam2024jamesjo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam2024jamesjo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Script/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scene/MainWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scene/MainWorld.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scene/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scene/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scene/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scene/Tutorial.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +19,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Jo/scripts/tutorial.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@14.0.10/Runtime/Volume/Volume.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Readers/ES3Reader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Jo/scripts/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Jo/scripts/bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Jo/scripts/TankLookAtPlayer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -82,6 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1706404720961</updated>
       <workItem from="1706404733731" duration="12870000" />
+      <workItem from="1706433850683" duration="1969000" />
     </task>
     <servers />
   </component>

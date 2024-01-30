@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     public Transform spawnTankPos;
     public float scoreToSpawnTank;
     public bool isGameOver;
+    public TextAnimator_TMP lastScore;
     
     [Header("Canvas")]
     public GameObject gameOverCanvas;
@@ -68,6 +69,7 @@ public class GameManager : MonoBehaviour
 
         if (hp <= 0 && !isGameOver)
         {
+            PlayerPrefs.SetFloat("PlayerScore",score);
             SoundManager.Instance.PlaySfx("GAMEOVER");
             StartCoroutine(GameOver());
             isGameOver = true;
@@ -122,6 +124,7 @@ public class GameManager : MonoBehaviour
     {
         score += scorePoint;
         scoreText.SetText($"<bounce a=0.2>{Convert.ToInt64(score).ToString()}");
+        lastScore.SetText(Convert.ToInt64(score).ToString());
     }
 
     private void Menu()
